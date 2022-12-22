@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Digital Regular;
+  src: url("./fonts/digital-7.regular.ttf");
+}
+*{
+  font-family: Digital Regular;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  background-image: url("./images/chalkboard.jpeg");
+  background-repeat: repeat;
+}
+.calculator{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(205, 77, 186);
+  border-radius: 20px;
+  box-shadow: rgb(116, 11, 116) 15px 8px;
+  width: 450px;
+  height: 690px;
+}
+#screen{
+  width: 400px;
+  height: 120px;
+  margin: 2px;
+  padding: 5px;
+  border: 1px rgb(116, 11, 116) solid;
+  border-radius: 15px;
+  box-shadow: inset 5px 5px;
+  background-color: rgb(130, 194, 194);
+  font-size: 125px;
+  text-align: right;
+}
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 8px;
+  height: 500px;
+  width: 385px;
+  margin: 0px;
+}
+button{
+  background-color: rgb(225, 161, 222);
+  border-radius: 15px;
+  box-shadow: rgb(116, 11, 116) 2px 2px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  border-color: rgb(208, 33, 164);
+}
+.button:active{
+  transform: translateY(4px);
+}
